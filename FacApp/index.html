@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FaceAI</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <script defer src="js/face-api.min.js"></script>
+  <script defer src="/js/script.js"></script>
+</head>
+
+
+<body class="grey lighten-4">
+
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">Face<span>AI</span></a>
+      <span class="right grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">Settings</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li><a href="/pages/about.html" class="waves-effect">More</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/pages/contact.html" class="waves-effect">
+      <i class="material-icons">gps_fixed</i>Learn</a>
+    </li>
+  </ul>
+
+  <!-- face detection -->
+  <div id="videoc">
+  <video id="video" width="360" height="270" autoplay muted></video>
+  </div>
+
+
+  <div class="center">
+    <h5>Face Detection</h5>
+    <p>The above video draws facial landmarks when detected a face</p>
+  </div>
+
+  <!-- Button -->
+  <div class="recipes container grey-text text-darken-1">
+    <div class="card-panel recipe white row">
+      <i class="material-icons">add_a_photo</i>
+      <div class="recipe-details">
+        <div class="recipe-title">Upload Your Image</div>
+        <div class="recipe-ingredients">Choose from local files</div>
+      </div>
+    </div>
+
+  <script src="/js/ui.js"></script>
+</body>
+</html>
